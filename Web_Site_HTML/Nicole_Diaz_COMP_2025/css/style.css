@@ -1,0 +1,108 @@
+@font-face {
+  /*Regla que define un tipo de letra exterior*/
+  font-family: Roboto-Light;
+  src: url(Roboto-Light.ttf);
+}
+* {
+  /*Evitar el desbordamiento de la caja contenedora*/
+  box-sizing: border-box;
+}
+body {
+  /*	
+  Propiedades necesarias para aplicar
+  ancho fijo y centrar todos los elementos 
+  internos en pantalla del navegador. */
+  width: 95%;
+  /*border: 1px solid black;*/
+  margin: 0px auto;
+  /* Se aplica tipo de letra a todo el docuemento*/
+  font-family: Roboto-Light;
+  /*border-left: 2px solid blue;*/
+}
+.index aside {
+  float: left;
+  width: 20%;
+  /*border: 1px solid black;*/
+}
+.index main {
+  float: left;
+  width: 60%;
+  /*border: 1px solid black;*/
+  padding: 15px;
+}
+.cabecera-principal {
+  clear: both;
+}
+footer {
+  clear: left;
+  width: 100%;
+  /*background-color: black;*/
+}
+.pag2 aside {
+  float: left;
+  width: 25%;
+  /*border: 1px solid black;*/
+}
+.pag2 main {
+  float: left;
+  width: 75%;
+  padding: 15px;
+  /*border: 1px solid black;*/
+}
+.cabecera-principal {
+  clear: both;
+}
+.cabecera-principal figure {
+  float: left;
+  width: 10%;
+}
+.cabecera-principal h1 {
+  float: left;
+  width: 80%;
+}
+.cabecera-principal {
+  border-bottom: 2px solid black;
+  height: 175px;
+}
+footer {
+  border-top: 2px solid black;
+  height: 175px;
+}
+.footer_content {
+  width: 25%;
+  margin: 5px auto;
+  /* Alineamos el texto */
+  text-align: center;
+}
+/*///////////////////////////////*/
+
+nav {
+  margin-right: -3%;
+  margin-left: -3%;
+}
+nav ul {
+  /* Eliminar estilo por defecto  de los
+	 elementos de lista usados en el menu de navegacion */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* Evitar desbordaminto de caja */
+  overflow: hidden;
+  background-color: #dd94dc;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  /* Eliminamos estilos por defecto del elemente a de  enlaces */
+  text-decoration: none;
+}
+img {
+  border-radius: 50px;
+  border: 6px solid #dd94dc;
+  /*border-radius: 20px;*/
+}
