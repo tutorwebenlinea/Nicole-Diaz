@@ -1,0 +1,134 @@
+@font-face {
+  /*Regla que define un tipo de letra exterior*/
+  font-family: Roboto-Light;
+  src: url(Roboto-Light.ttf);
+}
+* {
+  /*Evitar el desbordamiento de la caja contenedora*/
+  box-sizing: border-box;
+}
+body {
+  /*  
+  Propiedades necesarias para aplicar
+  ancho fijo y centrar todos los elementos 
+  internos en pantalla del navegador. */
+  width: 95%;
+  /*border: 1px solid black;*/
+  margin: 0px auto;
+  /* Se aplica tipo de letra a todo el docuemento*/
+  font-family: Roboto-Light;
+  /*border-left: 2px solid blue;*/
+}
+.index aside {
+  float: left;
+  width: 20%;
+  /*border: 1px solid black;*/
+}
+.index main {
+  float: left;
+  width: 60%;
+  /*border: 1px solid black;*/
+  padding: 15px;
+}
+.cabecera-principal {
+  clear: both;
+}
+footer {
+  clear: left;
+  width: 100%;
+  /*background-color: black;*/
+}
+.pag2 aside {
+  float: left;
+  width: 25%;
+  /*border: 1px solid black;*/
+}
+.pag2 main {
+  float: left;
+  width: 75%;
+  padding: 15px;
+  /*border: 1px solid black;*/
+}
+.cabecera-principal {
+  clear: both;
+}
+.cabecera-principal figure {
+  float: left;
+  width: 10%;
+}
+.cabecera-principal h1 {
+  float: left;
+  width: 80%;
+}
+.cabecera-principal {
+  border-bottom: 2px solid black;
+  height: 175px;
+}
+footer {
+  border-top: 2px solid black;
+  height: 175px;
+}
+.footer_content {
+  width: 25%;
+  margin: 5px auto;
+  /* Alineamos el texto */
+  text-align: center;
+}
+/*///////////////////////////////*/
+
+.cabecera_menu * {
+  margin: 0px;
+  padding: 0px;
+}
+.fondo_menu {
+  background-color: #dd94dc;
+  height: 40px;
+}
+.cabecera_menu {
+  width: 100%;
+}
+.cabecera_menu nav {
+  width: 100%;
+}
+.cabecera_menu ul, .cabecera_menu ol {
+  list-style: none;
+}
+/* Todos los elemnetos li que sean hojos directos de la clase sub_menu*/
+
+.cabecera_menu .sub_menu>li {
+  float: left;
+}
+.cabecera_menu .sub_menu li a {
+  background-color: #dd94dc;
+  color: black;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+.cabecera_menu .sub_menu li a:hover {
+  background-color: #e5bee4;
+}
+/* Todos los ul que  esten dentro de li  nos seran visibles*/
+
+.cabecera_menu .sub_menu li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+/* Elemento ul hoijo inmediato de li al hacer hover mouse estara en blok*/
+
+.cabecera_menu .sub_menu li:hover>ul {
+  display: block;
+}
+.cabecera_menu .sub_menu li ul li {
+  position: relative;
+}
+.cabecera_menu .sub_menu li ul li ul {
+  right: -200px;
+  top: 0px;
+}
+img {
+  border-radius: 50px;
+  border: 6px solid #dd94dc;
+  /*border-radius: 20px;*/
+}
